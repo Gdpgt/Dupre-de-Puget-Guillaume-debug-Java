@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.SortedMap;
 
+/**
+ * Main class for symptom analysis from a file.
+ * Reads symptoms, counts occurrences, and writes results to a file.
+ */
 public class Main {
 
     public static void main (String[] args) {
@@ -20,7 +24,6 @@ public class Main {
         }
     }
 }
-
 
 
 
@@ -117,3 +120,4 @@ public class Main {
 		}
 	}
 }*/
+

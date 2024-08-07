@@ -11,9 +11,18 @@ import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-
+/**
+ * Implementation of the SymptomAnalyser interface.
+ * Provides methods for reading, counting, and writing the symptoms.
+ */
 public class SymptomAnalyserImpl implements SymptomAnalyser {
 
+    /**
+     * Reads the symptoms from the file "symptoms.txt".
+     *
+     * @return A list of symptoms read from the file.
+     * @throws IOException If an I/O error occurs while reading the file.
+     */
     @Override
     public List<String> readTheSymptoms() throws IOException {
 
@@ -29,6 +38,12 @@ public class SymptomAnalyserImpl implements SymptomAnalyser {
         }
     }
 
+    /**
+     * Counts the occurrences of each symptom.
+     *
+     * @param symptoms The list of symptoms to analyze.
+     * @return A sorted map with symptom names as keys and occurrence counts as values.
+     */
     @Override
     public SortedMap<String, Integer> countTheSymptoms(List<String> symptoms) {
 
@@ -40,6 +55,12 @@ public class SymptomAnalyserImpl implements SymptomAnalyser {
         return symptomOccurrences;
     }
 
+    /**
+     * Writes symptom occurrences to a file.
+     *
+     * @param symptomOccurrences A map containing symptom names and their occurrence counts.
+     * @throws IOException If an I/O error occurs while writing to the file.
+     */
     @Override
     public void writeTheSymptoms(SortedMap<String, Integer> symptomOccurrences) throws IOException {
 

@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.SortedMap;
 
+/**
+ * Interface for symptom analysis.
+ */
 public interface SymptomAnalyser {
 
     public List<String> readTheSymptoms() throws IOException;
